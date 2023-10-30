@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #020A10;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1146px;
+
+}
+
+.header__link{
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    padding: 40px 16px;
+}
+.header__nav{
+    display: flex;
+    justify-content: center;
+}
+
+.header__link:hover{
+    color: #3A68B8;
+}
+.header{
+    margin-bottom: 160px;
+}
+.subtitle{
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title{
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 71.5px */
+    margin-bottom: 40px;
+}
+
+.dsc{
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+
+.main__button{
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    padding: 1rem 2rem;
+    margin-right: 20px;
+}
+.fa{
+    margin-right: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.main__left, .main__right{
+    width: 47%;
+}
+.main__right{
+    display: flex;
+    justify-content: end;
+}
+
+.main{
+    margin-bottom: 200px;
+}
+.logo{
+    margin-bottom: 256px;
+}
+.content__left{
+    margin-right: 68px;
+}
+.content{
+    margin-bottom: 264px;
+}
+.grid__container{
+    grid-template-columns: repeat(3, 362px);
+    gap: auto;
+    grid-template-rows: repeat(3, 389px);
+}
+.subtitle2{
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 31.25px */
+}
+.content2{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
+    grid-template-rows: repeat(3, 389px);
+    margin-bottom: 243px;
+    justify-content: center;
+}
+.item{
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+
+}
+.content2__item__text{
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7
+}
+.item4{
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+}
+.content1{
+    margin-bottom: 264px;
+}
+
+.content3{
+    margin-bottom: 269px;
+}
+.content3__text{
+    margin-bottom: 20px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+}
+
+.subtitle4{
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; 
+    margin-bottom: 40px;
+}
+
+.footer{
+    margin-bottom: 46px;
+}
+
+.foo__heading{
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 33px;
+}
+
+.foo__text{
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.foo__text__i2{
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+}
+.footer__item{
+    width: 362px;
+}
+.fa-brands{
+    color: #FFF;
+}
+.social__media{
+    width: 99px;
+    display: flex;
+    justify-content: space-between;
+}
