@@ -7,6 +7,7 @@
   $backgroundTop: #222222;
   $mainBackground: #F1E4E6;
   $mainText: #F16D7F;
+  $widthSite: 1140px;
 
   
   img {
@@ -19,11 +20,15 @@
   
   .container {
     margin: 0 auto;
-    width: 1140px;
+    width: $widthSite;
     /* padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px); */
   }
   
+  .center{
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+  }
   .header {
     background-color: $backgroundTop;
     &__nav {
@@ -252,9 +257,9 @@
       &_img {
         margin-bottom: 24px;
       }
+      
   }
-  
-  
+
   .price {
     color: $mainText;
     font-family: Lato;
@@ -542,6 +547,97 @@
           margin-left: 0;
         }
       }
+    
+      .filter-sort{
+        height: 132px;
+        position: relative;
+        display: flex;
+        gap: 16px;
+        padding-top: 39px;
+        box-sizing: border-box;
+      }
+    .filter{
+      padding-top: 13px;
+      width: 360px;
+      position: relative;
+      z-index:10;
+      box-sizing: border-box;
+      
+      &__content{
+        background-color: #fff;
+        padding-top: 0;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+      }
+
+      &[open] {
+        background: #FFF;
+        box-shadow: 6px 4px 35px
+        rgba(0, 0, 0, 0.21);
+      }
+
+      &[open] .filter__heading{
+        color: $mainText;
+      }
+
+      &[open] path {
+        fill: $mainText;
+      }
+
+      &__summary{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+      }
+      &__heading{
+        color: $backgroundTop;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      &_head{
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $mainText;
+      }
+      &__item[open] .filter__head{
+        color:$mainText;
+      }
+      &__item{
+        margin-top: 16px;
+      }
+      &__link-box{
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px 24px 16px;
+      }
+      &__link{
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover{
+          color: $mainText;
+        }
+
+      }
+    }
+    .sort{
+      
+    }
     
   
   @media (max-width: 1024px) {
